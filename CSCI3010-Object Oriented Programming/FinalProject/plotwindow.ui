@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlotWindow</class>
+ <widget class="QMainWindow" name="PlotWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PlotWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="plotGraphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>450</width>
+      <height>450</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>50</y>
+      <width>171</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="BluePlayerLayout">
+     <item>
+      <widget class="QLabel" name="BlueLabel">
+       <property name="text">
+        <string>Blue Player</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="BlueTiles">
+       <property name="text">
+        <string>Tiles Colored:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="BlueGold">
+       <property name="text">
+        <string>Gold:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="CurrentPlayer">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string>Current Player:</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>50</y>
+      <width>171</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="RedPlayerLayout">
+     <item>
+      <widget class="QLabel" name="RedLabel">
+       <property name="text">
+        <string>Red Player</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="RedTiles">
+       <property name="text">
+        <string>Tiles Colored:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="RedGold">
+       <property name="text">
+        <string>Gold:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="EndTurnButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>End Turn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NewGameButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Game</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MovesLabel">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>30</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Moves Left:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="LevelUpButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>470</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Level Up Piece</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>120</y>
+      <width>491</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Game Rules:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Pieces have &amp;quot;P&amp;quot; and Bases have &amp;quot;B.&amp;quot; The number is their level.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Move pieces to color tiles. First person to color 100 squares wins.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Move a piece onto an opponent's piece to send it back to their base.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Gain 1 gold per turn per piece that hasn't moved.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- Use gold to level up your pieces and bases.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Piece level: 1 -&amp;gt; 2 costs 2 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Piece level: 2 -&amp;gt; 3 costs 3 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Base level: 1 -&amp;gt; 2 costs 4 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Base level: 2 -&amp;gt; 3 costs 6 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;A new piece or base costs gold. The new piece's level can be up to the base's level. Input the level in the text box.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Create level 1: 3 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Create level 2: 4 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Create level 3: 5 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Create Base: 3 gold&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;There are special squares on the grid:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Pink squares level up the first piece that stepped on them&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Orange squares also color all squares around them when first stepped on&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CreatePieceButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>470</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Piece of Level</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="CreatePieceLevel">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>520</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CreateBaseButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>520</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Base</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SimulateGamesEntry">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>20</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SimulateGamesButton">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>10</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Simulate Games</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="GraphView">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>460</y>
+      <width>500</width>
+      <height>100</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="GraphLabel">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>440</y>
+      <width>421</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Graph displays percent of Squares Colored at end of Simulated Games.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>983</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPoint_Grapher">
+    <property name="title">
+     <string>Point Grapher</string>
+    </property>
+   </widget>
+   <addaction name="menuPoint_Grapher"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
