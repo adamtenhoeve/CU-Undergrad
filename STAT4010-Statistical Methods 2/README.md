@@ -5,3 +5,5 @@ Expands upon statistical techniques introduced in STAT 4000. Topics include mode
 Taken: Spring 2019
 
 Instructed by: Brian Zaharatos
+
+Final Project can be found here: https://github.com/adamtenhoeve/TitanicModelComparisons
